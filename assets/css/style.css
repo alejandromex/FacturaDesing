@@ -1,0 +1,143 @@
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+body
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.950), rgba(0, 0, 0, 0.800),rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.650));
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.factura{
+    max-width: 42vw;
+    margin: 0 auto;
+    margin-top: 6vh;
+    height: 94vh;
+    background-color: white;
+    padding: 20px;
+}
+
+.encabezado{
+    border-bottom: 1px solid black;
+}
+
+.encabezado h2,
+.cuerpo h2{
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+
+.cuerpo h2{
+    border-bottom: none;
+}
+
+.info{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.info-izq{
+    width: 60%;
+}
+
+.info-izq p,
+.info-der p{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.content-info-izq
+{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.info-der{
+    width: 40%;
+}
+
+.content-info-der{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: end;
+    margin-bottom: 6px;
+}
+
+.cuerpo{
+    margin-top: 8px;
+}
+
+.encabezado-tabla,
+.cuerpo-tabla,
+.pie-factura,
+.cuerpo-dolares,
+.pie-dolares{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+.encabezado-tabla div{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.cuerpo h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cuerpo > h4 > span{
+    margin-left: 20px;
+}
+
+.cuerpo-tabla,
+.pie-factura,
+.cuerpo-dolares,
+.pie-dolares{
+    font-size: 12px;
+    text-align: center;
+}
+
+.top{
+    border-top: 1px solid black;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.pie-final{
+    display: grid;
+    grid-template-columns: 3fr repeat(10,1fr);
+    text-align: center;
+    font-size: 12px;
+}
+
+.text-izq{
+    text-align: start;
+}
